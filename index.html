@@ -4,9 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="\style.css">
     <title>Donut Clicker</title>
   </head>
   <body>
+    <h4><span class="donut-count">0</span> Donuts</h4>
+    <img
+      src="\images\donut-pink.png"
+      name="donutButton"
+      alt="jsButton"
+      class="donutButton"
+    />
+    <div class="upgrades">
+      <div class="auto-clicker-upgrade">
+        <h3 class="price">Auto Clicker Price</h3>
+        <h2><span id="auto-clicker-price">100</span> Donuts</h2>
+        <button id="purchase-auto-clicker">Purchase Auto Clicker</button>
+        <h3 class="price">Total Purchased:</h3>
+        <h2><span id="auto-clickers-total">0</span></h2>
+      </div>
+      <div class="click-multiplier-upgrade">
+        <h3 class="price">Click Multiplier Price</h3>
+        <h2><span id="click-multiplier-price">10</span> Donuts</h2>
+        <button id="purchase-click-multiplier">
+          Purchase Click Multiplier
+        </button>
+        <h3 class="price">Total Purchased:</h3>
+        <h2><span id="click-multiplier">0</span></h2>
+      </div>
+    </div>
+    <button id="reset-game-button">Reset</button>
+
     <div class="container"></div>
     <script src="./index.js"></script>
   </body>
